@@ -1,0 +1,30 @@
+{
+  "generator-ngx-rocket": {
+    "version": "8.1.1",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "jawaz",
+      "target": ["web"],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": false,
+      "lazy": true,
+      "angulartics": true,
+      "languages": ["en-US"],
+      "analyticsProvider": "ga",
+      "googleAnalyticsAccount": "",
+      "tools": ["prettier", "hads"],
+      "utility": [],
+      "deploy": "none",
+      "projectName": "jawaz",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
+    <button class="navbar-toggler" type="button" (click)="toggle()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [class.show]="isShow">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link text-uppercase" routerLink="/card" routerLinkActive="active">
+          <i class="fas fa-question-circle"></i>
+          <span translate>card</span>
+        </a>
+      </div>
+      <form #loginForm="ngForm" class="form-inline my-2 my-lg-0 ml-auto" (ngSubmit)="login()">
+        <input
+          type="text"
+          class="form-control mr-sm-4"
+          [(ngModel)]="data.email"
+          placeholder="email"
+          required
+          name="email"
+        />
+        <input
+          type="password"
+          class="form-control mr-sm-4"
+          [(ngModel)]="data.password"
+          placeholder="password"
+          required
+          name="password"
+        />
+        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">signin</button>
+      </form>
+    </div>
+  </nav>
+</header>
